@@ -11,8 +11,8 @@
     --header-bg: #020300;
     --header-font-color: #cbd4c2;
     --first-container-bg: #394648;
-    --second-container-bg: #3e363f;
-    --third-container-bg: #cbd4c2;
+    --second-container-bg: #cbd4c2;
+    --third-container-bg: #3e363f;
     --main-font-color: #e8f7ee;
 }
 body {
@@ -21,6 +21,9 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2 {
+    font-weight: normal;
+}
 /* Header */
 
 #navbar {
@@ -41,12 +44,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: auto;
     margin-right: 30px;
     width: 300px;
 }
 
 .navbar-items li {
-    margin-left: 15px;
+    margin-right: 30px;
 }
 
 /* Main */
@@ -61,13 +65,13 @@ body {
 .main-container div {
     width: 100vw;
     height: 100vh;
-    color: var(--main-font-color);
 }
 
 #welcome-section {
+    color: var(--main-font-color);
     background-color: var(--first-container-bg);
     text-align: center;
-    font-size: 0rem;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,9 +79,19 @@ body {
 }
 
 #projects {
+    color: var(--header-bg);
     background-color: var(--second-container-bg);
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #contact {
+    color: var(--header-font-color);
     background-color: var(--third-container-bg);
+    text-align: center;
+    font-size: 3rem;
 }
