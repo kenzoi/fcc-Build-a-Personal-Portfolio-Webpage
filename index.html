@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,73 @@
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <header>
-    <nav id="navbar">
-        <ul class="navbar-items">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <nav id="navbar">
+            <ul class="navbar-items">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="main-container">
-        <div id="welcome-section">
+        <div id="welcome-section" class="flex-container">
             <h1>Hello! I am Kenzo</h1>
             <h2>A web developer</h2>
         </div>
-        <div id="projects">
-            <h2>Projects</h2>
-            <ul class="projects-container">
-                <li class="project-tile"><a href=""></a></li>
-                <li class="project-tile"><a href=""></a></li>
-                <li class="project-tile"><a href=""></a></li>
-                <li class="project-tile"><a href=""></a></li>
-                <li class="project-tile"><a href=""></a></li>
-            </ul>
+        <div id="projects" class="flex-container">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div>
+                <a href="">
+                    <figure>
+                        <img src="images/tribute-page.jpg">
+                        <figcaption>Tribute Page</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <figure>
+                        <img src="images/survey-form.jpg">
+                        <figcaption>Tribute Page</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <figure>
+                        <img src="images/product-landing-page.jpg">
+                        <figcaption>Tribute Page</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <figure>
+                        <img src="images/technical-doc.jpg">
+                        <figcaption>Tribute Page</figcaption>
+                    </figure>
+                </a>
+            </div>
         </div>
-        <div id="contact">
+        <div id="contact" class="flex-container">
             <h2>Contacts</h2>
             <ul>
                 <li><a href="" id="profile-link"></a></li>
                 <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        </div>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        </ul>
         </div>
     </main>
 </body>
+
 </html>
