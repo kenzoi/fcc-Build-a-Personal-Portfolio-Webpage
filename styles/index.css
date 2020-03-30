@@ -24,6 +24,7 @@ body {
 h1, h2 {
     font-weight: normal;
 }
+
 /* Header */
 
 #navbar {
@@ -57,12 +58,12 @@ h1, h2 {
 
 .main-container {
     width: 100vw;
-    height: 300vh;
+    min-height: 300vh;
     display: flex;
     flex-direction: column;
 }
 
-.flex-container {
+.submain-container {
     width: 100vw;
     height: 100vh;
 }
@@ -81,11 +82,29 @@ h1, h2 {
 #projects {
     color: var(--header-bg);
     background-color: var(--second-container-bg);
+    width: 100vw;
+    min-height: 100vh;
     text-align: center;
+    align-items: center;
     font-size: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: auto 1fr / 1fr;
+    grid-auto-flow: row;
+}       
+
+.grid-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 460px));
+    grid-template-rows: repeat(auto-fill, 300px);
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
 }
 
 #contact {
@@ -93,4 +112,21 @@ h1, h2 {
     background-color: var(--third-container-bg);
     text-align: center;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.icons {
+    width: auto;
+    height: 100px;
 }
